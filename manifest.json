@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "jpenagg.lawn",
+  "name": "Lawn",
+  "version": "1.0.0",
+  "author": "jpenagg",
+  "license": "MIT",
+  "description": "For lawn lovers: what today is like for mowing, soil temperature and rain, and a lawn calendar set by your own frost dates.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Lawn",
+    "description": "Mowing weather, soil and rain, and a lawn calendar for your grass and climate.",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "conditions": true,
+      "notify": false,
+      "grassType": "Tall fescue",
+      "zone": "Auto",
+      "lastFrost": "",
+      "firstFrost": ""
+    },
+    "schema": [
+      {
+        "key": "conditions",
+        "type": "boolean",
+        "label": "Weather lookups",
+        "description": "Fetch the forecast, town search results, and 30 years of climate history from open-meteo.com in the background. Off keeps the plugin fully offline: only the calendar is shown, following the zone you pick.",
+        "defaultValue": true
+      },
+      {
+        "key": "notify",
+        "type": "boolean",
+        "label": "Notifications",
+        "description": "Send a notification when a lawn calendar job's window opens.",
+        "defaultValue": false
+      },
+      {
+        "key": "grassType",
+        "type": "enum",
+        "label": "Grass type",
+        "options": [
+          "Tall fescue",
+          "Kentucky bluegrass",
+          "Perennial ryegrass",
+          "Fine fescue",
+          "Bermuda",
+          "Zoysia",
+          "St. Augustine",
+          "Centipede",
+          "Bahia",
+          "Buffalograss"
+        ],
+        "description": "Sets the mowing height, how growth is judged, and which jobs the lawn calendar shows.",
+        "defaultValue": "Tall fescue"
+      },
+      {
+        "key": "zone",
+        "type": "enum",
+        "label": "USDA hardiness zone",
+        "options": [
+          "Auto",
+          "1a",
+          "1b",
+          "2a",
+          "2b",
+          "3a",
+          "3b",
+          "4a",
+          "4b",
+          "5a",
+          "5b",
+          "6a",
+          "6b",
+          "7a",
+          "7b",
+          "8a",
+          "8b",
+          "9a",
+          "9b",
+          "10a",
+          "10b",
+          "11a",
+          "11b",
+          "12a",
+          "12b",
+          "13a",
+          "13b"
+        ],
+        "description": "Auto estimates the zone from 30 years of winter lows at the lawn's location. The zone is shown in the panel and checks that your grass suits it; it sets the calendar's dates only where frost dates are not available.",
+        "defaultValue": "Auto"
+      },
+      {
+        "key": "lastFrost",
+        "type": "string",
+        "label": "Usual last spring frost, as MM-DD (blank to estimate)",
+        "defaultValue": ""
+      },
+      {
+        "key": "firstFrost",
+        "type": "string",
+        "label": "Usual first fall frost, as MM-DD (blank to estimate)",
+        "defaultValue": ""
+      }
+    ]
+  }
+}
