@@ -330,7 +330,7 @@ Panel {
             PlainText {
               anchors.horizontalCenter: parent.horizontalCenter
               width: Math.min(implicitWidth, parent.width)
-              text: wording.t("headline." + (lawn.store.mowingState || "none"))
+              text: wording.t("title")
               font.pixelSize: Style.font.heading
               font.weight: Font.DemiBold
               elide: Text.ElideRight

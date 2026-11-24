@@ -411,7 +411,7 @@ Item {
       var body = strings.t("notify.job.body")
       // The notification daemon renders markup, so the text goes through
       // plainText first; it is passed as arguments, never through a shell.
-      Quickshell.execDetached(["omarchy-notification-send", "--app-name", "Lawn", Model.plainText(headline), Model.plainText(body)])
+      Quickshell.execDetached(["omarchy-notification-send", "--app-name", "Lawn Almanac", Model.plainText(headline), Model.plainText(body)])
     }
     notified = Model.parseNotified(Model.serialiseNotified(keys))
     notifiedFile.setText(Model.serialiseNotified(keys))

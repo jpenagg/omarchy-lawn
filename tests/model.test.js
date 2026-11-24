@@ -649,7 +649,7 @@ test("the only text sent to a shared sink goes through plainText", () => {
   // One notification call, in the service, with both strings neutralized.
   const sends = allQml.match(/omarchy-notification-send[^\n]*/g)
   assert.equal(sends.length, 1)
-  assert.match(sends[0], /"--app-name", "Lawn", Model\.plainText\(headline\), Model\.plainText\(body\)\]\)/)
+  assert.match(sends[0], /"--app-name", "Lawn Almanac", Model\.plainText\(headline\), Model\.plainText\(body\)\]\)/)
   assert.equal(qml["Service.qml"].includes(sends[0]), true)
 })
 
@@ -675,7 +675,6 @@ test("network access is fixed, HTTPS, timed, capped, and all in the service", ()
 test("every string the panel asks for is in the English catalog", () => {
   const keys = new Set()
   for (const match of allQml.matchAll(/(?:words|wording|strings)\.tn?\("([^"]+)"/g)) keys.add(match[1])
-  for (const state of ["none", "resting", "today", "tomorrow", "wet", "hot"]) keys.add("headline." + state)
   for (const state of ["resting", "today", "tomorrow", "wet", "hot"]) keys.add("mow." + state)
   for (const pace of ["fast", "steady", "slow", "none"]) keys.add("pace." + pace)
   for (const status of ["resting", "ok", "rain", "give"]) keys.add("water." + status)

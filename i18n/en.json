@@ -1,10 +1,5 @@
 {
-  "headline.none": "Your lawn",
-  "headline.resting": "The lawn is resting",
-  "headline.today": "Good day to mow",
-  "headline.tomorrow": "Better mowing tomorrow",
-  "headline.wet": "Too wet to mow",
-  "headline.hot": "Too hot to mow",
+  "title": "Lawn Almanac",
   "card.mowing": "Mowing",
   "card.soil": "Soil",
   "card.rain": "Rain this week",
@@ -95,6 +90,6 @@
   "basis.unknown": "Couldn't work out your frost dates, so the calendar follows zone %1.",
   "notify.label": "Notify me when a job's window opens",
   "notify.job": "Lawn: %1",
-  "notify.job.body": "Its window is open. See the Lawn panel for the dates.",
+  "notify.job.body": "Its window is open. See Lawn Almanac for the dates.",
   "chip.noPlace": "Set your town"
 }

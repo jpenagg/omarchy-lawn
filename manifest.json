@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "jpenagg.lawn",
-  "name": "Lawn",
-  "version": "1.0.0",
+  "name": "Lawn Almanac",
+  "version": "1.1.0",
   "author": "jpenagg",
   "license": "MIT",
   "description": "For lawn lovers: pick your grass and town, and it works out your USDA zone and frost dates, then shows when to mow, soil temperature, rain, and what is next on the lawn calendar.",
@@ -15,7 +15,7 @@
     "barWidget": "Panel.qml"
   },
   "barWidget": {
-    "displayName": "Lawn",
+    "displayName": "Lawn Almanac",
     "description": "Mowing weather, soil and rain, and a lawn calendar for your grass and climate.",
     "category": "Info",
     "allowMultiple": false,

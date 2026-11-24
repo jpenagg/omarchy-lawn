@@ -1,13 +1,13 @@
-# Lawn
+# Lawn Almanac
 
 An Omarchy shell plugin for people who love their grass. Nothing to log and nothing to keep up: it reads the weather and the calendar and tells you what they mean for the lawn.
 
-![The Lawn panel: today, the grass, zone and town settings, and the full calendar](preview.png)
+![The Lawn Almanac panel: today, the grass, zone and town settings, and the full calendar](preview.png)
 
 Click the grass in the bar for a short stack of cards:
 
-- **Header:** what today is like ("Good day to mow", "Too wet to mow", "The lawn is resting"), and your grass, zone, and town as three chips. Click the chips to change any of them.
-- **Mowing:** the dry stretch of daylight to mow in, today or tomorrow, and the height to cut at.
+- **Header:** the name, Lawn Almanac, and your grass, zone, and town as three chips. Click the chips to change any of them.
+- **Mowing:** the dry stretch of daylight to mow in, today or tomorrow, and the height to cut at. It says so when it is too wet or too hot to mow, or the grass is not growing.
 - **Soil:** soil temperature and how fast the grass is growing.
 - **Rain this week:** what fell, what is coming, and whether to water.
 - **Frost-free:** the usual last frost of spring and first of fall, which the calendar hangs on.
