@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "jpenagg",
   "license": "MIT",
-  "description": "For lawn lovers: what today is like for mowing, soil temperature and rain, and a lawn calendar set by your own frost dates.",
+  "description": "For lawn lovers: pick your grass and town, and it works out your USDA zone and frost dates, then shows when to mow, soil temperature, rain, and what is next on the lawn calendar.",
   "kinds": [
     "service",
     "bar-widget"

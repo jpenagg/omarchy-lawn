@@ -2,7 +2,7 @@
 
 An Omarchy shell plugin for people who love their grass. Nothing to log and nothing to keep up: it reads the weather and the calendar and tells you what they mean for the lawn.
 
-![The Lawn panel, opened from the bar](preview.png)
+![The Lawn panel: today, the grass, zone and town settings, and the full calendar](preview.png)
 
 Click the grass in the bar for a short stack of cards:
 
